@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fallback background color */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Full-Screen Background Image */
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://github.com/ecek01/browser-based-game/blob/main/background.jpg?raw=true'); /* Background image URL */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay with Semi-Transparent Inside Color and Border */
+.overlay {
+    background-color: rgba(73, 41, 113, 0.8); /* #492971 with reduced opacity */
+    border: 4px solid #3f2165; /* Border color */
+    padding: 30px;
+    border-radius: 0px; /* Sharp edges */
+    width: 90%;
+    max-width: 700px; /* Make the box wider */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dialogue-box {
+    background: none; /* Remove background to avoid additional borders */
+    padding: 0;
+    margin: 0;
+}
+
+.intro-text {
+    font-size: 1.2em; /* Slightly larger text for readability */
+    margin-bottom: 20px;
+    color: #ffffff; /* Keep text white */
+}
+
+/* Start Button with Matching Colors */
+.start-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #3f2165; /* Border color for the button background */
+    color: #ffffff; /* White text */
+    border: 2px solid #492971; /* Inside color for the button border */
+    border-radius: 0px; /* Sharp edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #492971; /* Inside color on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Hidden class to manage visibility */
+.hidden {
+    display: none;
+}
+
+/* Styling the options buttons */
+.option-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #3f2165; /* Dark color for the buttons */
+    color: #ffffff; /* White text */
+    border: 2px solid #492971; /* Matching border color */
+    border-radius: 0px; /* Sharp edges */
+    cursor: pointer;
+    margin: 10px; /* Space between the buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #492971; /* Change background color on hover */
+    color: #ffffff; /* Keep text white on hover */
+}

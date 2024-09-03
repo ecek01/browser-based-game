@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enchanted Forest - Light Path</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/light.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image-background">
+            <div class="overlay">
+                <div id="dialogue-box" class="dialogue-box" onclick="advanceText()">
+                    <p id="intro-text" class="intro-text">You walk through the dense forest.</p>
+                </div>
+                <div id="options" class="options hidden">
+                    <button class="option-button" onclick="location.href='tree.html'">Follow the Light</button>
+                    <button class="option-button" onclick="location.href='ruins.html'">Stay on the Path</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

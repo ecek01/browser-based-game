@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enchanted Forest - Ancient Ruins</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/ruins.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image-background">
+            <div class="overlay">
+                <div id="dialogue-box" class="dialogue-box" onclick="advanceText()">
+                    <p id="intro-text" class="intro-text">Deeper in the forest, you find ancient ruins covered in glowing runes.</p>
+                </div>
+                <div id="options" class="options hidden">
+                    <button class="option-button" onclick="location.href='ending_bad.html'">Explore the Ruins</button>
+                    <button class="option-button" onclick="location.href='ending_neutral.html'">Avoid the Ruins</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
