@@ -13,3 +13,13 @@ function advanceText() {
         document.getElementById("options").classList.remove("hidden");
     }
 }
+
+document.querySelector('.option-button.drink-stream').addEventListener('click', () => {
+    localStorage.setItem('choiceStream', 'drink-stream');
+    location.href = 'ending_good.html'; // Leads to the good ending
+});
+
+document.querySelector('.option-button.refuse-water').addEventListener('click', () => {
+    localStorage.setItem('choiceStream', 'refuse-water');
+    location.href = 'ending_neutral.html'; // Leads to the neutral ending
+});

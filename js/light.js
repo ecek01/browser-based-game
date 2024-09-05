@@ -15,3 +15,13 @@ function advanceText() {
         document.getElementById("options").classList.remove("hidden");
     }
 }
+
+document.querySelector('.option-button.follow-light').addEventListener('click', () => {
+    localStorage.setItem('choiceLight', 'follow-light');
+    location.href = 'tree.html';
+});
+
+document.querySelector('.option-button.stay-path').addEventListener('click', () => {
+    localStorage.setItem('choiceLight', 'stay-path');
+    location.href = 'ruins.html';
+});

@@ -13,3 +13,13 @@ function advanceText() {
         document.getElementById("options").classList.remove("hidden");
     }
 }
+
+document.querySelector('.option-button.explore-ruins').addEventListener('click', () => {
+    localStorage.setItem('choiceRuins', 'explore-ruins');
+    location.href = 'ending_bad.html'; // Leads to the bad ending
+});
+
+document.querySelector('.option-button.avoid-ruins').addEventListener('click', () => {
+    localStorage.setItem('choiceRuins', 'avoid-ruins');
+    location.href = 'ending_neutral.html'; // Leads to the neutral ending
+});

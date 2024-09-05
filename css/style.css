@@ -1,3 +1,21 @@
+/* Import the Handjet font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+/* Set the default font style for the body */
+body {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 400; /* Default font weight for the entire page */
+}
+
+/* Specific styling for the intro-text paragraph */
+.intro-text {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 400; /* Set the font weight to 400 */
+    font-size: 1.2em; /* Adjust size if needed */
+    line-height: 1.6; /* Adjust spacing between lines */
+    color: #fff; /* Example text color, you can customize */
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -55,14 +73,15 @@ body {
     margin: 0;
 }
 
-.intro-text {
-    font-size: 1.2em; /* Slightly larger text for readability */
-    margin-bottom: 20px;
-    color: #ffffff; /* Keep text white */
+
+.start-button.hidden {
+    display: none; /* Hide the button initially */
 }
 
 /* Start Button with Matching Colors */
 .start-button {
+    font-family: 'Handjet', sans-serif; /* Apply Handjet font to the button */
+    font-weight: 400; /* You can adjust the font-weight as needed */
     padding: 10px 20px;
     font-size: 1.1em;
     background-color: #3f2165; /* Border color for the button background */
@@ -85,6 +104,8 @@ body {
 
 /* Styling the options buttons */
 .option-button {
+    font-family: 'Handjet', sans-serif; /* Apply Handjet font to the button */
+    font-weight: 400; /* You can adjust the font-weight as needed */
     padding: 10px 20px;
     font-size: 1.1em;
     background-color: #3f2165; /* Dark color for the buttons */
@@ -99,4 +120,25 @@ body {
 .option-button:hover {
     background-color: #492971; /* Change background color on hover */
     color: #ffffff; /* Keep text white on hover */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center;
+    gap: 20px; /* Space between the image and the text box */
+}
+
+.forest-image {
+    width: 300px; /* Set a fixed width for the image */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+.custom-font {
+    font-family: 'Handjet', sans-serif; /* Use the same font you used earlier */
+    font-weight: 400; /* Adjust weight if necessary */
+    font-size: 1.2em; /* Adjust size as needed */
+    line-height: 1.6; /* Adjust spacing */
+    color: #fff; /* Example color, you can adjust */
 }
