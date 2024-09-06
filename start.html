@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Enchanted Forest - Start</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/app.js"></script>
+    <script defer src="./js/start.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="image-background">
-            <div class="overlay">
-                <div class="dialogue-box">
-                    <p class="intro-text">
-                        You are a traveler who stumbles upon an ancient, enchanted forest.<br>
-                        Rumors say the forest is alive with magic, filled with mystical creatures, and holds ancient secrets.<br>
-                        As you venture deeper into the woods, you must make decisions that will determine your fate:<br>
-                        Will you harness the forest's magic, become trapped within its mysteries, or simply find your way out?<br>
-                        <br>
-                        Click the button below to begin your journey.
-                    </p>
-                    <button class="start-button" onclick="location.href='light.html'">Start Journey</button>
-                </div>
+        <div class="overlay">
+            <!-- Updated Dialogue Box -->
+            <div id="dialogue-box" class="start-dialogue-box">
+                <p id="intro-text" class="intro-text">
+                    You are a traveler who stumbles upon an ancient, enchanted forest.<br>
+                    Rumors say the forest is alive with magic, filled with mystical creatures, and holds ancient secrets.<br>
+                    As you venture deeper into the woods, you must make decisions that will determine your fate:<br>
+                    Will you harness the forest's magic, become trapped within its mysteries, or simply find your way out?<br>
+                    <br>
+                    Click the button below to begin your journey.
+                </p>
+            </div>
+            <!-- Centered Start Button -->
+            <div class="start-button-wrapper">
+                <button class="start-button" onclick="location.href='light.html'">Start Journey</button>
+                <button class="start-button" onclick="location.href='instructions.html'">How to Play</button>
             </div>
         </div>
     </div>

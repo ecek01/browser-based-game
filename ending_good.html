@@ -9,13 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="image-background">
+        <div class="content-wrapper">
+            <!-- Image displayed to the left of the text box -->
+            <img src="https://github.com/ecek01/browser-based-game/blob/main/good.jpg?raw=true" alt="A powerful forest guardian spirit, radiating a gentle aura, standing by the ancient trees." class="good-image">
+            
             <div class="overlay">
                 <!-- Add message box to display win message -->
                 <div id="message-box"></div>
 
-                <div id="dialogue-box" class="dialogue-box" onclick="advanceText()">
+                <div id="dialogue-box" class="dialogue-box">
                     <p id="intro-text" class="intro-text">You gain the trust of the forest's guardian, a powerful spirit, who grants you a magical artifact.</p>
+                    <!-- Next button for progressing the text -->
+                    <button id="next-button" class="next-button">Next</button>
                 </div>
                 <div id="options" class="options hidden">
                     <button class="option-button" onclick="location.href='start.html'">Go Back to Start</button>
@@ -25,4 +30,3 @@
     </div>
 </body>
 </html>
-

@@ -9,17 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="image-background">
+        <div class="content-wrapper">
+            <!-- Image displayed to the left of the text box -->
+            <img src="https://github.com/ecek01/browser-based-game/blob/main/stream.jpg?raw=true" alt="A crystal-clear enchanted stream flowing through the forest, reflecting the trees and sky." class="stream-image">
+            
             <div class="overlay">
-                <div id="dialogue-box" class="dialogue-box" onclick="advanceText()">
+                <div id="dialogue-box" class="dialogue-box">
                     <p id="intro-text" class="intro-text">After hours of wandering, you come across a crystal-clear stream.</p>
+                    <!-- Next button for progressing the text -->
+                    <button id="next-button" class="next-button">Next</button>
                 </div>
                 <div id="options" class="options hidden">
-                    <button class="option-button" onclick="location.href='ending_good.html'">Drink from Stream</button>
-                    <button class="option-button" onclick="location.href='ending_neutral.html'">Refuse the Water</button>
+                    <button class="option-button drink-stream" onclick="location.href='ending_good.html'">Drink from Stream</button>
+                    <button class="option-button refuse-water" onclick="location.href='ending_neutral.html'">Refuse the Water</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+

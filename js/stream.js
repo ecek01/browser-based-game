@@ -9,17 +9,24 @@ function advanceText() {
         introText.textContent = textArray[textIndex];
         textIndex++;
     } else {
-        document.getElementById("dialogue-box").removeEventListener("click", advanceText);
+        // Hide the next button and show the options after the last text
+        document.getElementById("next-button").classList.add("hidden");
         document.getElementById("options").classList.remove("hidden");
     }
 }
 
-document.querySelector('.option-button.drink-stream').addEventListener('click', () => {
-    localStorage.setItem('choiceStream', 'drink-stream');
-    location.href = 'ending_good.html'; // Leads to the good ending
-});
+document.addEventListener('DOMContentLoaded', () => {
+    // Add event listener to the next button for advancing text
+    document.getElementById("next-button").addEventListener("click", advanceText);
+    
+    // Event listeners for options
+    document.querySelector('.option-button.drink-stream').addEventListener('click', () => {
+        localStorage.setItem('choiceStream', 'drink-stream');
+        location.href = 'ending_good.html'; // Leads to the good ending
+    });
 
-document.querySelector('.option-button.refuse-water').addEventListener('click', () => {
-    localStorage.setItem('choiceStream', 'refuse-water');
-    location.href = 'ending_neutral.html'; // Leads to the neutral ending
+    document.querySelector('.option-button.refuse-water').addEventListener('click', () => {
+        localStorage.setItem('choiceStream', 'refuse-water');
+        location.href = 'ending_neutral.html'; // Leads to the neutral ending
+    });
 });

@@ -9,10 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="image-background">
+        <div class="content-wrapper">
+            <!-- Image displayed to the left of the text box -->
+            <img src="https://github.com/ecek01/browser-based-game/blob/main/ruins.jpg?raw=true" alt="Ancient ruins overgrown with vines, glowing runes etched into the stone walls." class="ruins-image">
+            
             <div class="overlay">
-                <div id="dialogue-box" class="dialogue-box" onclick="advanceText()">
+                <div id="dialogue-box" class="dialogue-box">
                     <p id="intro-text" class="intro-text">Deeper in the forest, you find ancient ruins covered in glowing runes.</p>
+                    <!-- Next button for progressing the text -->
+                    <button id="next-button" class="next-button">Next</button>
                 </div>
                 <div id="options" class="options hidden">
                     <button class="option-button explore-ruins" onclick="location.href='ending_bad.html'">Explore the Ruins</button>

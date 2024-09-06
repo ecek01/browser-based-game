@@ -11,11 +11,12 @@ function advanceText() {
         introText.textContent = textArray[textIndex];
         textIndex++;
     } else {
-        // When text progression is complete, remove event listener and show the options
-        document.getElementById("dialogue-box").removeEventListener("click", advanceText);
+        // Hide the next button and show the options after the last text
+        document.getElementById("next-button").classList.add("hidden");
         document.getElementById("options").classList.remove("hidden");
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const messageBox = document.getElementById('message-box');
