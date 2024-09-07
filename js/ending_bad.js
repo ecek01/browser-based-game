@@ -1,4 +1,4 @@
-let textIndex = 0;  // Start from 0 to properly handle the text array
+let textIndex = 0;
 const textArray = [
     "Malevolent spirits or cursed creatures ensnare you, and you become lost, trapped forever in the enchanted forest.",
     "You achieved the bad ending."
@@ -10,7 +10,6 @@ function advanceText() {
         introText.textContent = textArray[textIndex];
         textIndex++;
     } else {
-        // Hide the next button and show the options after the last text
         document.getElementById("next-button").classList.add("hidden");
         document.getElementById("options").classList.remove("hidden");
     }
@@ -18,18 +17,15 @@ function advanceText() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const messageBox = document.getElementById('message-box');
-    
-    // Retrieve player's choices from localStorage
     const choiceLight = localStorage.getItem('choiceLight');
     const choiceRuins = localStorage.getItem('choiceRuins');
-    
-    // Display the appropriate message based on player's choices
+
     if (choiceLight === 'stay-path' && choiceRuins === 'explore-ruins') {
         messageBox.innerHTML = `<h1 class="custom-font">You Got Lost!</h1>`;
     } else {
         messageBox.innerHTML = `<h1 class="custom-font">You Failed!</h1>`;
     }
 
-    // Attach event listener to the Next button for advancing text
     document.getElementById("next-button").addEventListener("click", advanceText);
 });
+
